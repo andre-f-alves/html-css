@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Trabalhando com Mídias em HTML5</h1>
+    <h2>
+        Imagem Dinâmica
+    </h2>
+    <p>
+        Tente abrir o site em vários dispositivos ou ajuste o tamanho da janela do navegador.
+    </p>
+    <picture>
+        
+        <source media="(max-width: 725px)" srcset="imgs/img-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imgs/img-m.png" type="image/png">
+        <img src="imgs/img-g.png" alt="Imagem Flexível">
+    </picture>
+    <h2>
+        Reprodução de Áudios
+    </h2>
+    <p>
+        Clique no player para reproduzir o áudio.
+    </p>
+    <!-- <audio src="midia/out-on-my-skateboard.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/out-on-my-skateboard.mp3" type="audio/mpeg">
+        <source src="midia/out-on-my-skateboard.ogg" type="audio/ogg">
+        <source src="midia/out-on-my-skateboard.wav" type="audio/wav">
+        <p>
+            infelizmente seu navegador não consegue reproduzir o áudio. Clique <a href="midia/out-on-my-skateboard.mp3" download="out-on-my-skateboard.mp3" type="audio/mpeg">aqui</a> para baixar o áudio em MP3
+        </p>
+    </audio>
+</body>
+</html>

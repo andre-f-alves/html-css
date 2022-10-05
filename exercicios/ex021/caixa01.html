@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            /* 
+                COnfigurações da caixa do conteúdo
+            */
+            background-color: lightgrey; /* -> cor de fundo */
+            height: 300px; /* -> altura */
+            width: 300px; /* -> largura */
+            
+            /*
+                Configurações da borda ('border')
+            */
+            /* border-width: 10px; /* -> largura */
+            /* border-style: solid; /* -> estilo */
+            /* border-color: darkslategrey; /* -> cor */
+
+            /* 
+                Propriedade shorthand para a borda
+            */
+            border: 10px solid darkslategrey;
+            
+            /*
+                Configurações do preenchimento ('padding') (sentido horário)
+            */
+            /* padding-top: 10px; /* -> tamanho em cima */
+            /* padding-right: 10px; /* -> tamanho à direita */
+            /* padding-bottom: 10px; /* -> tamanho em baixo */
+            /* padding-left: 10px; /* -> tamanho à esquerda */
+
+            /* 
+                Propriedade shorthand para o preenchimento
+            */
+            padding: 10px;
+
+            /* 
+                Configurações da margem ('margin') (sentido horário)
+            */
+            /* margin-top: 20px; /* -> tamanho em cima */
+            /* margin-right: 20px; /* -> tamanho à direita */
+            /* margin-bottom: 40px; /* -> tamanho em baixo */
+            /* margin-left: 20px; /* -> tamanho à esquerda */
+            /* margin: auto; /* -> centralização horizontal */
+
+            /* 
+                Propriedade shorthand para a margem
+            */
+            margin: 20px 20px 40px 20px;
+
+            /* 
+                Configurações do contorno ('outline')
+            */
+            /* outline-width: 4px; /* -> largura */
+            /* outline-style: dashed; /* -> estilo */
+            /* outline-color: lightgreen; /* -> cor */
+
+            /* 
+                Propriedade shorthand para o contorno
+            */
+            outline: 4px dashed lightgreen;
+        }
+
+        a { /* inline-box */
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>
+        Os parágrfos também são exemplos de caixas do tipo box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vejamos como tudo isso funciona.
+    </p>
+</body>
+</html>

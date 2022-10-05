@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Trabalhando com Vídeos em HTML5</h1>
+    <h2>
+        Inserção de Vídeos em Hospedagem Local
+    </h2>
+    <p>
+        O vídeo abaixo está hospedado em meu próprio servidor.
+    </p>
+    <video controls width="560">
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.mp4" type="video/mp4">
+        <p>
+            Navegador não compatível com vídeos. Baixe o vídeo MP4 clicando <a href="midia/video.mp4" download="video.mp4" type="video/mp4">aqui</a>.
+        </p>
+    </video>
+    <h2>
+        Inserção de Vídeos em Hospedagem Externa
+    </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

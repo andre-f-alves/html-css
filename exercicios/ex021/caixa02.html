@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags Semânticas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+            margin: 0px;
+        }
+
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #727272;
+            padding: 5px;
+            box-shadow: 4px 4px 9px 1px #00000056;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border: 1px solid;
+            padding: 2px 7px;
+            margin: 0px 29px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: lightgrey;
+            
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 15px;
+            box-shadow: 4px 4px 10px 2px #00000056;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: darkgray;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Exemplo</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Novidades da HTML5</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quae in, quisquam fugit quo mollitia architecto. Excepturi ex ad mollitia! Perferendis animi, amet deserunt sequi cupiditate nisi asperiores veniam ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quasi harum rem, inventore cumque qui doloremque iure amet, est magni ipsa at officiis perferendis sapiente adipisci? Vel eum ducimus nesciunt?
+                </p>
+                <aside>Artigo escrito por André Alves</aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por André Alves</p>
+    </footer>
+</body>
+</html>

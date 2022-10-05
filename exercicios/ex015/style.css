@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* Regra de compatibilidade com caracteres acentuados */
+
+body {
+    background-color: lightsteelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    color: darkblue;
+    background-color: rgb(101, 211, 255);
+}
+
+h2 {
+    color: mediumblue;
+}
+
+h3 {
+    color: rgb(36, 113, 255);
+}
+
+p {
+    text-align: justify;
+}

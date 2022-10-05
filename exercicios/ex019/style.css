@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+/* 
+    id (HTML) = # (CSS) -> apenas um elemento deve possuir uma identificação
+    class (HTML) = . (CSS) -> vários elementos podem fazer parte de uma mesma classe
+*/
+
+body {
+    background-color: #9fffc2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #3A8CF0;
+}
+
+h2 {
+    color: #2cb6d1;
+}
+
+#principal {
+    text-align: center;
+    background-color: #3A8CF0;
+    color: #3EED32;
+}
+
+.basico {
+    color: #2ca123;
+}
+
+.intermediario {
+    color: #a19f23;
+}
+
+.avancado {
+    color: #a15123;
+}
