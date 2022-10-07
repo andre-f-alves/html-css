@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens de Fundo</title>
+    <title>Imagem de Fundo Fixa</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image: url('imgs/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: no-repeat;
+            /* background-color: black; */
+            /* background-image: url('imgs/wallpaper002.jpg'); */
+            /* background-position: center top; */
+            /* background-repeat: no-repeat; */
             background-size: cover;
+            /* background-attachment: fixed; */
+
+            /*
+                Propriedade shorthand 'background':
+                1º - color;
+                2º - image;
+                3º - position;
+                4º - repeat;
+                5º - size*;
+                6º - attachment.
+
+                * Embora esteja na regra, ainda não é possível definir o tamanho da imagem com a shorthand. O ideal é acrescentar a propriedade 'background-size' fora da shorthand.
+            */
+            background: black url('imgs/wallpaper002.jpg') center top no-repeat fixed;
         }
 
         main {
-            background-color: white;
-            width: 500px;
+            background-color: #ffffffe7;
+            max-width: 500px;
             padding: 15px;
             border-radius: 10px;
             margin: auto;
@@ -31,6 +45,15 @@
         </h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iste reprehenderit accusantium nostrum ipsa magnam totam magni laudantium atque repellat? Repellendus, id iste deserunt molestiae aliquam excepturi mollitia at natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam provident veritatis explicabo quis adipisci molestias, quam exercitationem deleniti, commodi molestiae totam ducimus! Corrupti, pariatur? Harum laboriosam dignissimos velit? Quaerat, recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sit deserunt. Odit fugiat veritatis earum minus ex ad quasi quae dolor aspernatur maiores distinctio possimus eveniet quo, mollitia vero temporibus!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio officia consectetur alias dolor ab nesciunt culpa ipsum vero delectus minima nobis. Nam reiciendis, nulla qui nobis laudantium quas ipsum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam voluptas saepe, excepturi alias, architecto consectetur error dignissimos velit est consequatur quasi fugiat corporis ut mollitia harum non omnis deleniti pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione beatae voluptates, molestias facilis voluptatibus temporibus expedita exercitationem quam quisquam minima. Voluptate aliquam sint ab ipsam doloremque accusantium exercitationem eveniet possimus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequuntur non libero corrupti tenetur ab magnam, ut officiis eveniet optio cum aspernatur repellendus ullam id doloremque. Molestiae excepturi laboriosam explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem voluptatum omnis sint sunt. Laudantium, at, magni placeat ipsam nesciunt odio eligendi nihil vel perspiciatis, iure officiis in iste esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae quis ducimus veritatis accusantium nesciunt doloribus reiciendis laborum perferendis, dignissimos voluptatibus mollitia molestias maxime assumenda est voluptates, inventore quisquam dolorum?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio iure recusandae modi autem accusamus voluptatem dolore, eligendi quidem consequuntur distinctio perspiciatis ipsa a et beatae deserunt tempore reprehenderit temporibus labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quos aspernatur laborum mollitia, numquam nobis illum. In, ex, ducimus ab commodi id sint aliquam, delectus repudiandae expedita eius eveniet impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ipsam impedit eaque molestias laborum nam sunt facere dignissimos praesentium numquam tempore, aspernatur, molestiae voluptatum reiciendis, porro quis quia optio explicabo!
         </p>
     </main>
 </body>
