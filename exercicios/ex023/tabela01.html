@@ -12,6 +12,7 @@
 
         table {
             width: 400px;
+            height: 100px;
             border-collapse: collapse;
             border: 2px solid black;
         }
@@ -23,10 +24,16 @@
         td {
             padding: 5px;
             border: 1px solid black;
+            text-align: center; /* -> Alinhamento horizontal */
+            vertical-align: middle; /* -> Alinhamento vertical */
         }
 
         td.dado {
             background-color: darkgray;
+        }
+
+        td.numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -36,10 +43,10 @@
     </h1>
     <!-- 
         Hierarquia de Tabelas Simples:
-        - Table = tabela
-            > Table Row = linha de tabela
-                >> Table Header = cabeçalho de tabela
-                >> Table Data = dado de tabela
+        - Table ('<table>') = tabela
+            > Table Row ('<tr>') = linha de tabela
+                >> Table Header ('<th>') = cabeçalho de tabela
+                >> Table Data ('<td>') = dado de tabela
      -->
      <table>
         <tr class="linha"> <!-- primeira linha -->
@@ -50,14 +57,14 @@
 
         <tr> <!-- segunda linha -->
             <td class="dado">A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td class="numero">B2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr> <!-- terceira linha -->
             <td class="dado">A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td class="numero">B3</td>
+            <td class="numero">C3</td>
         </tr>
      </table>
 </body>
