@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários com HTML5</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iestado">Estado: </label>
+            <select name="Estado" id="iestado">
+
+                <option value="">--- ESCOLHA ---</option>
+
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprofissao">Profissão: </label>
+            <input type="text" name="profissao" id="iprofissao" list="listprofissao">
+
+            <datalist id="listprofissao">
+                    <option value="Administrador"></option>
+                    <option value="Contador"></option>
+                    <option value="Programador"></option>
+                    <option value="Desenvolvedor"></option>
+                    <option value="Cozinheiro"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iexp">Exepriência: </label><br>
+            <textarea name="exp" id="iexp" cols="30" rows="10" placeholder="Conte-nos sua experiência."></textarea>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
