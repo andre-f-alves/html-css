@@ -3,3 +3,8 @@
 /* 
     Dispositivo vertical (retrato)
 */
+
+body {
+    background: url('../../imgs/cev-portrait.jpg') center bottom no-repeat fixed;
+    background-size: contain;
+}

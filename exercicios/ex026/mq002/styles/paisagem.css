@@ -3,3 +3,8 @@
 /* 
     Dispositivo na horizontal (paisagem)
 */
+
+body {
+    background: url('../../imgs/cev-landscape.jpg') center bottom no-repeat fixed;
+    background-size: contain;
+}
