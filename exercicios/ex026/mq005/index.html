@@ -7,8 +7,9 @@
     <title>Site Exemplo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 </head>
-<body>
+<body onresize="ajustar()">
     <header>
         <h1>
             Site de Exemplo
@@ -55,6 +56,14 @@
     </main>
 
     <script>
+        function ajustar() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
         function abrirMenu() {
             if (menu.style.display == 'none') {
                 menu.style.display = 'block'
